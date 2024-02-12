@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: url(deer-night-scenery-minimalist-uhdpaper.com-4K-6.2169.jpg) no-repeat;
+    background-size: cover;
+  }
+  .container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background: transparent;
+    color: white;
+  }
+  input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 20%;
+  }
+  input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+  }
+  .new-user-link {
+    text-align: center;
+    margin-top: 10px;
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form action="your_backend_script.php" method="POST">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </form>
+    <input type="submit" value="Login">
+    <div class="new-user">
+      <a class="new-user-link" href="new_user.html">New User? Register here</a>
+    </div>
+  </div>
+</body>
+</html>
